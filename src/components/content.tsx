@@ -1,4 +1,4 @@
-// Draft pricing: values live in src/config/site.ts (pricingGroups). Tokens stay until figures are approved.
+// Pricing values live in src/config/site.ts (pricingGroups).
 import { Link } from "@tanstack/react-router";
 import { Check, Code2, Search, Gauge, Wrench, CalendarCheck, Handshake } from "lucide-react";
 import { BookButton, Eyebrow, Reveal, Section } from "./site";
@@ -33,9 +33,6 @@ export function PricingSection({ compact = false }: { compact?: boolean }) {
       <Eyebrow>Pricing</Eyebrow>
       <h2 className="text-3xl sm:text-4xl">Simple plans. Room to grow.</h2>
       <p className="mt-4 max-w-2xl text-muted-foreground">Every business is different, so we start with a conversation. These plans give you a clear place to start.</p>
-      <p className="mt-5 inline-block rounded-xl border border-gold bg-gold/15 px-4 py-2 text-sm font-semibold text-forest">
-        Proposed pricing. Final figures pending approval.
-      </p>
       {pricingGroups.map((g) => (
         <div key={g.heading} className="mt-12">
           <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-border pb-3">
@@ -48,12 +45,14 @@ export function PricingSection({ compact = false }: { compact?: boolean }) {
                 {t.badge && <span className="self-start rounded-full bg-gold px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-forest-deep">{t.badge}</span>}
                 <h4 className={`${t.badge ? "mt-5" : ""} font-serif text-2xl`}>{t.name}</h4>
                 <p className="mt-4 font-serif text-3xl">{t.price}</p>
+                {t.priceNote && <p className="mt-1 text-sm text-muted-foreground">{t.priceNote}</p>}
                 {!compact && <p className="mt-4 text-sm text-muted-foreground">{t.bestFor}</p>}
                 <ul className="mt-6 flex-1 space-y-2.5 text-sm">
                   {t.includes.map((f) => (
                     <li key={f} className="flex gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-sage" aria-hidden />{f}</li>
                   ))}
                 </ul>
+                {t.finePrint && <p className="mt-4 text-xs leading-relaxed text-muted-foreground">{t.finePrint}</p>}
                 <BookButton variant={t.featured ? "primary" : "outline"} className="mt-8 w-full" />
               </Reveal>
             ))}

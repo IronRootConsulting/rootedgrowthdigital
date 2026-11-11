@@ -42,34 +42,44 @@ export const site = {
 
 export type Plan = {
   name: string;
-  /** Price text exactly as approved, e.g. "$1,197" or "$99/mo". Draft tokens stay until approval. */
+  /** Price text exactly as approved, e.g. "$1,797" or "$99/mo". */
   price: string;
+  /** Optional line under the price, e.g. "with 12 months of any monthly plan". */
+  priceNote?: string;
   bestFor: string;
   includes: string[];
+  /** Optional small print under the includes list. */
+  finePrint?: string;
   badge?: string;
   featured?: boolean;
 };
 
 export type PlanGroup = { heading: string; terms: string; plans: Plan[] };
 
-/** Draft pricing (proposed, pending approval). No setup fee anywhere. */
+/** Approved pricing (Andrew, Nov 11, 2026, 1:30 PM ET). Copy from Ignatius, verbatim. */
 export const pricingGroups: PlanGroup[] = [
   {
     heading: "Website builds",
-    terms: "[TERMS: 50% deposit to start, 50% at launch.]",
+    terms: "Paid builds: 50% deposit to start, 50% at launch.",
     plans: [
       {
-        name: "Starter Site",
-        price: "[PRICE: $1,197]",
-        bestFor: "A simple, professional presence to get you started.",
-        includes: ["Up to [TERMS: 3] pages", "[CONFIRM: other Starter inclusions]"],
+        name: "One-Page Site",
+        price: "$0 build",
+        priceNote: "with 12 months of any monthly plan",
+        bestFor: "One-person and simple businesses that need one clear, professional page.",
+        includes: [
+          "A single-page site, built for you",
+          "No upfront build cost",
+          "Pairs with any monthly plan for 12 months",
+        ],
+        finePrint: "A $297 fee applies if your plan is cancelled in the first 12 months.",
       },
       {
         name: "Foundation Site",
-        price: "[PRICE: $1,797]",
+        price: "$1,797",
         bestFor: "Room to tell your full story and help local customers find you.",
         includes: [
-          "Up to [TERMS: 6] pages",
+          "Up to 6 pages",
           "Local SEO setup [CONFIRM: scope, e.g. Google Maps / Business Profile]",
           "Training on your new site [CONFIRM: format]",
         ],
@@ -78,27 +88,46 @@ export const pricingGroups: PlanGroup[] = [
       },
       {
         name: "Growth/Commerce Site",
-        price: "[PRICE: from $3,497]",
+        price: "from $3,497",
         bestFor: "Larger sites, or businesses that sell or book online.",
-        includes: ["[CONFIRM: page count and commerce or booking features]", "Scoped together after our first conversation"],
+        includes: [
+          "[CONFIRM: page count and commerce or booking features]",
+          "Scoped together after our first conversation",
+        ],
       },
     ],
   },
   {
-    heading: "Monthly care",
-    terms: "[TERMS: Month-to-month. No setup fee.]",
+    heading: "Monthly plans",
+    terms: "Month-to-month. No setup fee. One-Page Sites carry a 12-month minimum.",
     plans: [
       {
+        name: "Hosting Only",
+        price: "$49/mo",
+        bestFor: "Owners who make their own updates and just need a reliable home for their site.",
+        includes: [
+          "Hosting",
+          "SSL security certificate",
+          "Uptime monitoring",
+          "Edits billed separately",
+          "For sites we build",
+        ],
+      },
+      {
         name: "Essential Care",
-        price: "[PRICE: $99/mo]",
+        price: "$99/mo",
         bestFor: "Keeping your site current and working.",
-        includes: ["[CONFIRM: Essential Care inclusions]"],
+        includes: [
+          "[CONFIRM: Essential Care inclusions]",
+        ],
       },
       {
         name: "Growth Care",
-        price: "[PRICE: $199/mo]",
+        price: "$199/mo",
         bestFor: "Owners who want ongoing help getting found and growing.",
-        includes: ["[CONFIRM: Growth Care inclusions]"],
+        includes: [
+          "[CONFIRM: Growth Care inclusions]",
+        ],
       },
     ],
   },

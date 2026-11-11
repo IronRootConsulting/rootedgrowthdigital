@@ -24,7 +24,7 @@ const FAQ = [
   { q: "How do we get started?", a: "Book a 15-minute intro call over Google Meet. We'll talk about your business and what would help most, then I'll suggest the plan that fits. [CONFIRM: is the intro call free?]" },
   { q: "Do I need an existing website?", a: "No. We can build from scratch. If you already have a site, we'll look at it together first. [CONFIRM: do you rebuild or improve existing sites?]" },
   { q: "Do you only work with Southwest Florida businesses?", a: "We're rooted in Southwest Florida, and local owners can meet in person. The intro call is over Google Meet, so businesses anywhere are welcome. [CONFIRM: how ongoing work runs for remote clients]" },
-  { q: "What happens after launch?", a: "We stay. With a monthly care plan, your site stays current and you have someone to call when you want to change, fix or grow something. Care is [TERMS: month-to-month]." },
+  { q: "What happens after launch?", a: "We stay. A monthly plan keeps your site current and gives you someone to call to change, fix or grow it. Plans are month-to-month, except the free One-Page Site's 12-month minimum." },
 ];
 
 function HowWeWork() {
