@@ -21,9 +21,9 @@ const STEPS = [
   { t: "Stay and keep growing", d: "Monthly care keeps your site current, and regular check-ins keep you clear on what to do next." },
 ];
 const FAQ = [
-  { q: "How do we get started?", a: "Book a 15-minute intro call over Google Meet. We'll talk about your business and what would help most, then I'll suggest the plan that fits. [CONFIRM: is the intro call free?]" },
-  { q: "Do I need an existing website?", a: "No. We can build from scratch. If you already have a site, we'll look at it together first. [CONFIRM: do you rebuild or improve existing sites?]" },
-  { q: "Do you only work with Southwest Florida businesses?", a: "We're rooted in Southwest Florida, and local owners can meet in person. The intro call is over Google Meet, so businesses anywhere are welcome. [CONFIRM: how ongoing work runs for remote clients]" },
+  { q: "How do we get started?", a: "Book a free 15-minute intro call over Google Meet. We'll talk about your business and what would help most, then I'll suggest the plan that fits." },
+  { q: "Do I need an existing website?", a: "No. We can build from scratch, or rebuild or improve the site you have. If you already have one, we'll look at it together first." },
+  { q: "Do you only work with Southwest Florida businesses?", a: "We're rooted in Southwest Florida and meet in person across Collier and Lee counties. The intro call is over Google Meet, so businesses anywhere are welcome." },
   { q: "What happens after launch?", a: "We stay. A monthly plan keeps your site current and gives you someone to call to change, fix or grow it. Plans are month-to-month, except the free One-Page Site's 12-month minimum." },
 ];
 

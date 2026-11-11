@@ -1,12 +1,12 @@
-// Draft Terms of Use (St. Thomas More, Nov 11, 2026). Attorney review recommended before publication.
+// Public Terms of Use text from the Nov 11, 2026 draft (editor notes stripped; [DATE] left for go-live).
 import { pageMeta } from "@/lib/seo";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { LegalPage } from "@/components/legal";
 
 export const Route = createFileRoute("/terms")({
   head: () => pageMeta(
-    "Terms of Use — Rooted Growth Digital (Draft)",
-    "Draft Terms of Use for the Rooted Growth Digital website, operated by IronRoot Consulting LLC.",
+    "Terms of Use — Rooted Growth Digital",
+    "Terms of Use for the Rooted Growth Digital website, operated by IronRoot Consulting LLC.",
     "/terms",
   ),
   component: Page,
@@ -16,35 +16,17 @@ function Page() {
   return (
     <LegalPage
       title="Terms of Use"
-      note={
-        <>
-          <p><strong>DRAFT — not legal advice. Attorney review recommended before publication. Do not publish or send until Andrew approves and the remaining placeholders are resolved.</strong></p>
-        </>
-      }
       dates={
         <>
           <p>Last updated: [DATE]</p>
         </>
       }
     >
-          <p className="text-sm text-muted-foreground">Prepared November 11, 2026, and revised the same day after Andrew’s decisions (relayed by St. Bernard at 12:11 PM ET), for Andrew Malby / IronRoot Consulting LLC. IronRoot Consulting’s approved Privacy Policy is at <a href="https://ironrootstrategy.com/privacy.html" className="underline decoration-gold underline-offset-2 hover:text-forest" target="_blank" rel="noopener noreferrer">https://ironrootstrategy.com/privacy.html</a> (fetched November 11, 2026). A companion Terms page was not found: <a href="https://ironrootstrategy.com/terms.html" className="underline decoration-gold underline-offset-2 hover:text-forest" target="_blank" rel="noopener noreferrer">https://ironrootstrategy.com/terms.html</a> returned HTTP 404 on November 11, 2026. These Terms are newly drafted for <a href="https://rootedgrowthdigital.com/" className="underline decoration-gold underline-offset-2 hover:text-forest" target="_blank" rel="noopener noreferrer">https://rootedgrowthdigital.com/</a>, in the same plain-language style as that Privacy Policy, and are not a copy of any IronRoot terms.</p>
-          <div className="rounded-xl border border-gold bg-gold/15 px-4 py-4 text-sm">
-            <p><strong>Before publishing, remove this boxed note and complete the following:</strong></p>
-            <ul className="list-disc space-y-2 pl-5">
-            <li>Replace [DATE] with the real publication date (do not backdate).</li>
-            <li>The site's form opens the visitor's own email app (mailto); no third-party form provider.</li>
-            <li>Scheduler / booking tool: Google Calendar booking page.</li>
-            <li>Contact email: <a href="mailto:hello@rootedgrowthdigital.com" className="underline decoration-gold underline-offset-2 hover:text-forest">hello@rootedgrowthdigital.com</a>.</li>
-            <li>Confirm that the IronRoot phone number and mailing address below are the ones to use for this Site.</li>
-            <li>The legal entity name, IronRoot Consulting LLC, and the sentence “Rooted Growth Digital is a service of IronRoot Consulting LLC, a Florida limited liability company” must remain in these Terms. The Site footer should use the phrase “A service of IronRoot Consulting LLC.”</li>
-            <li>These Terms govern use of the website. They are not a substitute for a signed services agreement.</li>
-          </ul>
-          </div>
           <p>Please read these Terms of Use (the “Terms”) carefully. They are a legally binding agreement between you and IronRoot Consulting LLC, a Florida limited liability company, which operates Rooted Growth Digital.</p>
 
           <p>Rooted Growth Digital is a service of IronRoot Consulting LLC, a Florida limited liability company. IronRoot Consulting LLC is the contracting party for the Site and for any inquiry you submit through it. “Rooted Growth Digital,” “we,” “us,” and “our” in these Terms mean IronRoot Consulting LLC. “You” means the person visiting or using the Site, and, if you are acting for a business, that business as well.</p>
 
-          <p>By accessing or using <a href="https://rootedgrowthdigital.com/" className="underline decoration-gold underline-offset-2 hover:text-forest" target="_blank" rel="noopener noreferrer">https://rootedgrowthdigital.com/</a> (the “Site”), you agree to these Terms and to our Privacy Policy. If you do not agree, do not use the Site.</p>
+          <p>By accessing or using <a href="https://rootedgrowthdigital.com/" className="underline decoration-gold underline-offset-2 hover:text-forest" target="_blank" rel="noopener noreferrer">https://rootedgrowthdigital.com/</a> (the “Site”), you agree to these Terms and to our <Link to="/privacy" className="underline decoration-gold underline-offset-2 hover:text-forest">Privacy Policy</Link>. If you do not agree, do not use the Site.</p>
 
           <h2 className="text-2xl">1. Who we are</h2>
 
@@ -57,13 +39,11 @@ function Page() {
           <p>Email: <a href="mailto:hello@rootedgrowthdigital.com" className="underline decoration-gold underline-offset-2 hover:text-forest">hello@rootedgrowthdigital.com</a><br />
           Telephone: (239) 341-4766 (+12393414766)</p>
 
-          <p className="text-sm italic text-muted-foreground">Andrew should confirm this telephone number and mailing address for Rooted Growth Digital before publication. The Site footer should use the phrase “A service of IronRoot Consulting LLC.”</p>
-
           <h2 className="text-2xl">2. What these Terms cover</h2>
 
-          <p>These Terms govern your access to and use of the Site, including browsing, reading portfolio or showcase content, submitting the contact form, and using a booking link to request a call. They do not, by themselves, create a contract for website design, hosting, marketing, or other professional services.</p>
+          <p>These Terms govern your access to and use of the Site, including browsing, reading portfolio or showcase content, using the contact form, and using a booking link to request a call. They do not, by themselves, create a contract for website design, hosting, marketing, or other professional services.</p>
 
-          <p>Any paid or formal engagement is governed only by a separate written services agreement signed or otherwise accepted by you and IronRoot Consulting LLC. Submitting a form, booking a call, or exchanging email does not commit either party to a project, a price, or a start date.</p>
+          <p>Any paid or formal engagement is governed only by a separate written services agreement signed or otherwise accepted by you and IronRoot Consulting LLC. Using the contact form, booking a call, or exchanging email does not commit either party to a project, a price, or a start date.</p>
 
           <h2 className="text-2xl">3. The Site and permitted use</h2>
 
@@ -84,13 +64,13 @@ function Page() {
 
           <h2 className="text-2xl">4. Inquiries, the contact form, and communications</h2>
 
-          <p>The Site includes a contact form. Information you submit is handled as described in our Privacy Policy. The site's form opens the visitor's own email app (mailto); no third-party form provider.</p>
+          <p>The Site includes a contact form that works as a “mailto” form. When you use it, your own email application opens, with a message addressed to <a href="mailto:hello@rootedgrowthdigital.com" className="underline decoration-gold underline-offset-2 hover:text-forest">hello@rootedgrowthdigital.com</a>. The Site itself does not store form submissions. If you send the message, it is received and handled through Google Workspace email, as described in our <Link to="/privacy" className="underline decoration-gold underline-offset-2 hover:text-forest">Privacy Policy</Link>. We do not control your email application or its privacy practices.</p>
 
-          <p>You agree that the information you submit is accurate to the best of your knowledge, and that you will not include sensitive information (for example a Social Security number, bank-account or payment-card number, or health information) in a form or unsolicited email.</p>
+          <p>You agree that the information you send is accurate to the best of your knowledge, and that you will not include sensitive information (for example a Social Security number, bank-account or payment-card number, or health information) in a form or unsolicited email.</p>
 
           <p>If you have contacted us, we may use your email address to reply and to follow up about scheduling or a possible engagement. We will not send marketing email unless you have consented to receive it. You may opt out of marketing email by using the unsubscribe method in the message or by emailing <a href="mailto:hello@rootedgrowthdigital.com" className="underline decoration-gold underline-offset-2 hover:text-forest">hello@rootedgrowthdigital.com</a>. We will honor opt-out requests as required by the CAN-SPAM Act. Replies to an inquiry you sent, and other transactional or relationship messages, are not marketing email.</p>
 
-          <p>If you use a booking link, you also agree to Google Calendar booking page’s terms and privacy policy, which govern that provider’s pages. We do not control that service.</p>
+          <p>If you use a booking link, you use Google’s appointment-scheduling pages. Those pages are Google’s service and are governed by Google’s terms and privacy policy. We do not control that service.</p>
 
           <h2 className="text-2xl">5. Portfolio and showcase content</h2>
 
@@ -116,7 +96,7 @@ function Page() {
 
           <h2 className="text-2xl">7. Third-party links and tools</h2>
 
-          <p>The Site may link to third-party websites or tools, including a form provider, a scheduling provider, or other resources. Those sites and tools have their own terms and privacy policies. We are not responsible for their content, availability, or practices, and a link is not an endorsement.</p>
+          <p>The Site may link to third-party websites or tools, including Google Calendar appointment scheduling or other resources. Those sites and tools have their own terms and privacy policies. We are not responsible for their content, availability, or practices, and a link is not an endorsement.</p>
 
           <h2 className="text-2xl">8. Disclaimers</h2>
 
@@ -142,7 +122,7 @@ function Page() {
 
           <h2 className="text-2xl">11. Privacy</h2>
 
-          <p>Our collection and use of personal information is described in the Privacy Policy posted on the Site. That policy is part of how we operate the Site. In case of a conflict about personal information, the Privacy Policy controls on that subject.</p>
+          <p>Our collection and use of personal information is described in the <Link to="/privacy" className="underline decoration-gold underline-offset-2 hover:text-forest">Privacy Policy</Link> posted on the Site. That policy is part of how we operate the Site. In case of a conflict about personal information, the <Link to="/privacy" className="underline decoration-gold underline-offset-2 hover:text-forest">Privacy Policy</Link> controls on that subject.</p>
 
           <h2 className="text-2xl">12. Children</h2>
 
@@ -160,7 +140,7 @@ function Page() {
 
           <h2 className="text-2xl">15. General</h2>
 
-          <p>If a court finds any part of these Terms unenforceable, the rest will continue in effect. Our failure to enforce a provision is not a waiver. You may not assign these Terms without our consent. We may assign them in connection with a transfer of the business. These Terms, together with the Privacy Policy, are the entire agreement between you and us about use of the Site, and they supersede prior discussions about that subject. They do not change a signed services agreement.</p>
+          <p>If a court finds any part of these Terms unenforceable, the rest will continue in effect. Our failure to enforce a provision is not a waiver. You may not assign these Terms without our consent. We may assign them in connection with a transfer of the business. These Terms, together with the <Link to="/privacy" className="underline decoration-gold underline-offset-2 hover:text-forest">Privacy Policy</Link>, are the entire agreement between you and us about use of the Site, and they supersede prior discussions about that subject. They do not change a signed services agreement.</p>
 
           <h2 className="text-2xl">16. Contact</h2>
 
@@ -173,6 +153,7 @@ function Page() {
 
           <p><a href="mailto:hello@rootedgrowthdigital.com" className="underline decoration-gold underline-offset-2 hover:text-forest">hello@rootedgrowthdigital.com</a><br />
           (239) 341-4766 (+12393414766)</p>
+
     </LegalPage>
   );
 }

@@ -27,7 +27,7 @@ export const site = {
   contactEmail: "hello@rootedgrowthdigital.com",
 
   /** Optional phone. Empty = hidden everywhere. Placeholder token shown until supplied. */
-  contactPhone: "[PLACEHOLDER: phone]",
+  contactPhone: "(239) 341-4766",
 
   /** Google Analytics 4 measurement ID (G-XXXXXXX). Empty = no analytics script is rendered. */
   ga4Id: "",
@@ -80,8 +80,8 @@ export const pricingGroups: PlanGroup[] = [
         bestFor: "Room to tell your full story and help local customers find you.",
         includes: [
           "Up to 6 pages",
-          "Local SEO setup [CONFIRM: scope, e.g. Google Maps / Business Profile]",
-          "Training on your new site [CONFIRM: format]",
+          "Google Business Profile, Maps and on-page SEO",
+          "A recorded 30-minute training call",
         ],
         badge: "Most complete start",
         featured: true,

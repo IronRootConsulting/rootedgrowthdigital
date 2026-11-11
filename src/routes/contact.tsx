@@ -61,10 +61,11 @@ function Contact() {
       </PageHero>
       <Section id="book">
         <div className="rounded-3xl bg-forest px-6 py-12 text-center text-cream sm:px-12">
-          <h2 className="text-3xl sm:text-4xl">Book a 15-minute intro call</h2>
+          <h2 className="text-3xl sm:text-4xl">Book a free 15-minute intro call</h2>
           <p className="mx-auto mt-3 max-w-md text-sm text-sage-light">Pick a time for a quick call over Google Meet. We'll talk through where your business is and what would help most. Have your business name handy.</p>
           <BookButton variant="light" className="mt-8" />
-          <p className="mt-3 text-xs text-sage-light">Prefer to write first? Send a message below.</p>
+          <p className="mt-3 text-xs text-sage-light">A free 15-minute intro call over Google Meet.</p>
+          <p className="mt-2 text-xs text-sage-light">Prefer to write first? Send a message below.</p>
         </div>
       </Section>
       <Section className="!pt-0">
@@ -109,14 +110,14 @@ function Contact() {
             {site.contactPhone && (
               <li className="flex items-center gap-3">
                 <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sage-light"><Phone className="h-4 w-4" aria-hidden /></span>
-                {phoneIsReal ? <a href={`tel:${site.contactPhone.replace(/[^+\d]/g, "")}`} className="hover:underline">{site.contactPhone}</a> : site.contactPhone}
+                {phoneIsReal ? <a href="tel:+12393414766" className="hover:underline">{site.contactPhone}</a> : site.contactPhone}
               </li>
             )}
             <li className="flex items-center gap-3">
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sage-light"><MapPin className="h-4 w-4" aria-hidden /></span>
               Southwest Florida · serving small businesses anywhere
             </li>
-            <li className="pl-[3.25rem] text-muted-foreground">Serving [CONFIRM: Collier, Lee and Charlotte counties, or the towns you name] in person.</li>
+            <li className="pl-[3.25rem] text-muted-foreground">Serving Collier and Lee counties in person.</li>
           </ul>
         </div>
       </Section>

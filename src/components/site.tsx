@@ -103,7 +103,7 @@ export function CtaBand({ title, body }: { title: string; body: string }) {
         <h2 className="text-3xl sm:text-4xl">{title}</h2>
         <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">{body}</p>
         <BookButton className="mt-8" />
-        <p className="mt-3 text-xs text-muted-foreground">A 15-minute intro call over Google Meet.</p>
+        <p className="mt-3 text-xs text-muted-foreground">A free 15-minute intro call over Google Meet.</p>
       </div>
     </section>
   );
@@ -168,7 +168,12 @@ export function Footer() {
           </ul>
         </nav>
         <div className="space-y-2 text-sm text-cream/80">
-          <p>{site.contactEmail}{site.contactPhone && <> · {site.contactPhone}</>} · Southwest Florida</p>
+          <p>
+            <a href={`mailto:${site.contactEmail}`} className="hover:text-cream">{site.contactEmail}</a>
+            {" · "}
+            <a href="tel:+12393414766" className="hover:text-cream">{site.contactPhone}</a>
+            {" · Southwest Florida"}
+          </p>
           <p>Rooted in Southwest Florida. Serving small businesses anywhere.</p>
           <p className="flex gap-4 pt-2">
             <Link to="/privacy" className="hover:text-cream">Privacy</Link>
