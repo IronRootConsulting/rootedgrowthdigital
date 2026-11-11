@@ -50,7 +50,7 @@ function HowWeWork() {
         <Eyebrow>What's included</Eyebrow>
         <h2 className="mb-10 text-3xl sm:text-4xl">Included services</h2>
         <ServiceCards />
-        <p className="mt-8 text-sm text-muted-foreground">[CONFIRM: which services come with every plan and which belong to specific plans]</p>
+        <p className="mt-8 text-sm text-muted-foreground">What's included depends on your build and monthly plan. See the plans below for details.</p>
       </Section>
       <PricingSection />
       <Section className="bg-cream-warm">
