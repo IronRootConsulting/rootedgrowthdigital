@@ -95,7 +95,7 @@ function Contact() {
             </label>
             <p className="text-xs text-muted-foreground">
               By sending this form, you agree I may contact you about your request. See the{" "}
-              <Link to="/privacy" className="underline">Privacy Policy</Link> [CONFIRM link].
+              <Link to="/privacy" className="underline">Privacy Policy</Link>.
             </p>
             <button type="submit" className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-forest-deep">Send message</button>
             {status === "sent" && <p role="status" className="rounded-xl bg-sage-pale px-4 py-3 text-sm font-semibold">Thanks, your message is in. I'll be in touch.</p>}
