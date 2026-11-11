@@ -37,7 +37,7 @@ export const site = {
 
   /** Footer attribution line. */
   parentCompanyNote: "A service of IronRoot Consulting LLC.",
-  copyright: "[CONFIRM: copyright line, e.g. © 2026 IronRoot Consulting LLC]",
+  copyright: "© 2026 IronRoot Consulting LLC",
 } as const;
 
 export type Plan = {
