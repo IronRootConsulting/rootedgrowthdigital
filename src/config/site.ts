@@ -91,8 +91,8 @@ export const pricingGroups: PlanGroup[] = [
         price: "from $3,497",
         bestFor: "Larger sites, or businesses that sell or book online.",
         includes: [
-          "[CONFIRM: page count and commerce or booking features]",
-          "Scoped together after our first conversation",
+          "Online store, booking or payments",
+          "Quoted after a discovery call",
         ],
       },
     ],
@@ -118,7 +118,9 @@ export const pricingGroups: PlanGroup[] = [
         price: "$99/mo",
         bestFor: "Keeping your site current and working.",
         includes: [
-          "[CONFIRM: Essential Care inclusions]",
+          "Hosting and SSL security",
+          "Uptime monitoring",
+          "30 minutes of edits a month",
         ],
       },
       {
@@ -126,7 +128,10 @@ export const pricingGroups: PlanGroup[] = [
         price: "$199/mo",
         bestFor: "Owners who want ongoing help getting found and growing.",
         includes: [
-          "[CONFIRM: Growth Care inclusions]",
+          "Everything in Essential Care",
+          "2 hours of edits a month",
+          "Light SEO",
+          "A monthly check-in",
         ],
       },
     ],

@@ -59,7 +59,8 @@ export function PricingSection({ compact = false }: { compact?: boolean }) {
           </div>
         </div>
       ))}
-      <p className="mt-10 text-sm text-muted-foreground">Not sure which fits? Book a call and we'll talk it through.</p>
+      <p className="mt-10 text-sm text-muted-foreground">Ad spend, outside software and a 3% card processing fee are billed separately.</p>
+      <p className="mt-4 text-sm text-muted-foreground">Not sure which fits? Book a call and we'll talk it through.</p>
       {compact && (
         <Link to="/how-we-work" hash="pricing" className="mt-4 inline-block text-sm font-semibold underline decoration-gold underline-offset-4">
           See full pricing details <span aria-hidden>→</span>
