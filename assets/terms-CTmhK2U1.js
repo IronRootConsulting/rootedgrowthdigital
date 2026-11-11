@@ -1,0 +1,1 @@
+import{h as e}from"./index-BLKcB3zT.js";import{t}from"./legal-CwE3jPt_.js";var n=e(),r=()=>(0,n.jsx)(t,{title:`Terms of Service`,note:`Placeholder — final Terms to be drafted (St. Thomas More).`,sections:[`Services`,`Payments`,`Responsibilities`,`Limitations`,`Changes to these terms`]});export{r as component};

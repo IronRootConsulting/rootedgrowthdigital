@@ -1,0 +1,1 @@
+import{h as e}from"./index-BLKcB3zT.js";import{t}from"./legal-CwE3jPt_.js";var n=e(),r=()=>(0,n.jsx)(t,{title:`Privacy Policy`,note:`Placeholder — final Privacy Policy to be drafted (St. Thomas More).`,sections:[`Information we collect`,`How we use information`,`Sharing`,`Your choices`,`Contact`]});export{r as component};
