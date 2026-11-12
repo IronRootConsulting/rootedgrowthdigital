@@ -1,4 +1,4 @@
-// Public Privacy Policy text from the Nov 11, 2026 draft (editor notes stripped; [DATE] left for go-live).
+// Public Privacy Policy text from the Nov 11, 2026 draft (editor notes stripped; November 12, 2026 left for go-live).
 import { pageMeta } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { LegalPage } from "@/components/legal";
@@ -18,8 +18,8 @@ function Page() {
       title="Privacy Policy"
       dates={
         <>
-          <p>Effective date: [DATE]<br />
-          Last updated: [DATE]</p>
+          <p>Effective date: November 12, 2026<br />
+          Last updated: November 12, 2026</p>
         </>
       }
     >

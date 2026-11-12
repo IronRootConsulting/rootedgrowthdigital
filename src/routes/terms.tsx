@@ -1,4 +1,4 @@
-// Public Terms of Use text from the Nov 11, 2026 draft (editor notes stripped; [DATE] left for go-live).
+// Public Terms of Use text from the Nov 11, 2026 draft (editor notes stripped; November 12, 2026 left for go-live).
 import { pageMeta } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { LegalPage } from "@/components/legal";
@@ -18,7 +18,7 @@ function Page() {
       title="Terms of Use"
       dates={
         <>
-          <p>Last updated: [DATE]</p>
+          <p>Last updated: November 12, 2026</p>
         </>
       }
     >

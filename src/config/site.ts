@@ -10,7 +10,7 @@ export const site = {
   origin: "https://rootedgrowthdigital.com",
 
   /** Draft mode keeps the gold banner and noindex,nofollow. Set false only after publish approval. */
-  draft: true,
+  draft: false,
 
   /**
    * Booking page URL (opens in a new tab). Empty = Book buttons link to /contact#book.
