@@ -169,10 +169,11 @@ export function Footer() {
         </nav>
         <div className="space-y-2 text-sm text-cream/80">
           <p>
-            <a href={`mailto:${site.contactEmail}`} className="hover:text-cream">{site.contactEmail}</a>
+            <a href={`mailto:${site.contactEmail}`} className="whitespace-nowrap hover:text-cream">{site.contactEmail}</a>
             {" · "}
-            <a href="tel:+12393414766" className="hover:text-cream">{site.contactPhone}</a>
-            {" · Southwest Florida"}
+            <a href="tel:+12393414766" className="whitespace-nowrap hover:text-cream">{site.contactPhone}</a>
+            {" · "}
+            <span className="whitespace-nowrap">Southwest Florida</span>
           </p>
           <p>Rooted in Southwest Florida. Serving small businesses anywhere.</p>
           <p className="flex gap-4 pt-2">
