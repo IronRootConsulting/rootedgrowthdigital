@@ -30,7 +30,7 @@ export const site = {
   contactPhone: "(239) 341-4766",
 
   /** Google Analytics 4 measurement ID (G-XXXXXXX). Empty = no analytics script is rendered. */
-  ga4Id: "",
+  ga4Id: "G-HX0EWF973F",
 
   /** Google Search Console HTML-tag token. Empty = no verification meta is rendered. */
   searchConsoleToken: "",
